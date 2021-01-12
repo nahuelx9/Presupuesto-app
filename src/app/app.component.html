@@ -1,0 +1,20 @@
+<app-header
+[presupuestoTotal] = "getPresupuestoTotal()"
+[ingresoTotal] = "getIngresoTotal()"
+[egresoTotal] = "getEgresoTotal()"
+[porcentajeTotal] = "getPorcentajeTotal()"
+></app-header>
+<app-form></app-form>
+<div class="contenedor limpiarEstilos">
+<app-ingreso></app-ingreso>
+
+<app-egreso
+[ingresoTotal]="getIngresoTotal()"
+></app-egreso>
+</div>
+
+
+
+
+
+
